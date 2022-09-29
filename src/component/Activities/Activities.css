@@ -1,0 +1,44 @@
+.activities-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.activities-section {
+    background: rgb(225, 222, 222);
+    border: 1px solid red;
+    padding: 80px 100px 100px 100px;
+}
+
+.header {
+    display: flex;
+}
+
+.header-icon {
+    font-size: 40px;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.header span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.sub {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.all-activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cart-section {
+    border: 1px solid green;
+}
+
+.about-me {
+    text-align: center;
+}
