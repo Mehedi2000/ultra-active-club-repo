@@ -5,7 +5,7 @@
 
 .activities-section {
     background: rgb(225, 222, 222);
-    padding: 80px 100px 100px 100px;
+    padding: 80px 70px 100px 70px;
 }
 
 .header {
@@ -34,8 +34,6 @@
     gap: 20px;
 }
 
-.cart-section {}
-
 .about-me {
     text-align: center;
 }
@@ -55,6 +53,7 @@
 }
 
 .break-time span {
+    text-align: center;
     background: white;
     border-radius: 50%;
     padding: 20px;
@@ -103,9 +102,14 @@
         grid-template-columns: 1fr;
     }
 
+    .activities-section {
+        padding: 80px 70px 100px 70px;
+        margin-bottom: 50px;
+    }
+
     .all-activities {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 60px;
     }
 }

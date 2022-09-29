@@ -1,6 +1,7 @@
 .activite-container {
     background-color: white;
     border-radius: 20px;
+    position: relative;
 }
 
 .activite-container img {
