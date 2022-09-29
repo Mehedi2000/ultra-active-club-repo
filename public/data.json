@@ -1,0 +1,38 @@
+[
+    {
+        "id": "63350775e047c962a9b54ff3",
+        "img": "http://media.islamicity.org/wp-content/uploads/2017/10/iStock-628846748Prayer.jpg",
+        "time": 15,
+        "name": "Pray Salah"
+    },
+    {
+        "id": "633507752b96ac21e2e0aab0",
+        "img": "https://blog.sweatco.in/wp-content/uploads/2020/11/fitness-walking-2-1024x683.jpg",
+        "time": 40,
+        "name": "Walking"
+    },
+    {
+        "id": "633507750b0faafb78070f9c",
+        "img": "https://post.healthline.com/wp-content/uploads/2020/02/man_shower-732x549-thumbnail.20180510181534629-732x549.jpg",
+        "time": 20,
+        "name": "Shower"
+    },
+    {
+        "id": "63350775a61cff16f57429f4",
+        "img": "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2019_41/3044956/191009-cooking-vegetables-al-1422.jpg",
+        "time": 45,
+        "name": "Cooking"
+    },
+    {
+        "id": "6335077502a809e6c95467d6",
+        "img": "https://www.sbs.com.au/food/sites/sbs.com.au.food/files/rx199_technique_2_of_9.jpg",
+        "time": 20,
+        "name": "Breakfast"
+    },
+    {
+        "id": "633507759ec2573e8ba43598",
+        "img": "https://res.cloudinary.com/highereducation/image/upload/v1533591754/TheBestColleges.org/study-notebooks.jpg",
+        "time": 60,
+        "name": "Study"
+    }
+]
