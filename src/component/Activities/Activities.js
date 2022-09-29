@@ -5,6 +5,7 @@ import { faPersonWalking } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Activite from '../Activite/Activite';
+import Swal from 'sweetalert2';
 
 
 
@@ -30,7 +31,16 @@ const Activities = () => {
     }
 
     const handleAddToBreak = (breakTime) => {
+        localStorage.setItem('breakTime', JSON.stringify(breakTime))
         setTime(breakTime)
+    }
+
+    const handleCart = () => {
+        Swal.fire(
+            'Good job!',
+            'Activity Completed Succesfully!',
+            'success'
+        )
     }
 
 
@@ -80,7 +90,7 @@ const Activities = () => {
                         <span>{time}m</span>
                     </div>
                 </div>
-                <button className='cart-btn'><p>Activity Completed</p></button>
+                <button onClick={handleCart} className='cart-btn'><p>Activity Completed</p></button>
             </div>
         </div>
     );
