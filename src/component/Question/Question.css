@@ -1,9 +1,33 @@
 .blog {
-    border: 1px solid rebeccapurple;
+    margin: 30px 0;
+}
+
+.blog-title {
+    text-align: center;
 }
 
 .Question {
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
 
+}
+
+.first-Q {
+    padding: 20px;
+    background: rgb(245, 228, 226);
+    border-radius: 20px;
+}
+
+.second-Q {
+    padding: 20px;
+    background: rgb(220, 220, 243);
+    border-radius: 20px;
+}
+
+.third-Q {
+    padding: 20px;
+    background: rgb(211, 227, 211);
+    border-radius: 20px;
 }
