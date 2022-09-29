@@ -96,3 +96,16 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+@media only screen and (max-width:768px) {
+    .activities-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .all-activities {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}

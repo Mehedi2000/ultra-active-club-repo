@@ -11,12 +11,23 @@ import Activite from '../Activite/Activite';
 const Activities = () => {
 
     const [activities, setActivities] = useState([])
+    const [cart, setcart] = useState([])
 
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
             .then(data => setActivities(data))
     }, [])
+
+    const handleAddToList = (activite) => {
+        const newCart = [...cart, activite]
+        setcart(newCart)
+    }
+    let total = 0;
+    for (const activite of cart) {
+        total = total + parseInt(activite.time);
+    }
+
 
     return (
         <div className='activities-container'>
@@ -33,6 +44,7 @@ const Activities = () => {
                         activities.map(activite => <Activite
                             activite={activite}
                             key={activite.id}
+                            handleAddToList={handleAddToList}
                         ></Activite>)
                     }
                 </div>
@@ -56,7 +68,7 @@ const Activities = () => {
                     <h2>Activities Details</h2>
                     <div className='activities-time'>
                         <span>Activities time</span>
-                        <span>0m</span>
+                        <span>{total}m</span>
                     </div>
                     <div className='Break-time'>
                         <span>Break time</span>
