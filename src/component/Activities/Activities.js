@@ -12,6 +12,7 @@ const Activities = () => {
 
     const [activities, setActivities] = useState([])
     const [cart, setcart] = useState([])
+    const [time, setTime] = useState(0)
 
     useEffect(() => {
         fetch('data.json')
@@ -26,6 +27,10 @@ const Activities = () => {
     let total = 0;
     for (const activite of cart) {
         total = total + parseInt(activite.time);
+    }
+
+    const handleAddToBreak = (breakTime) => {
+        setTime(breakTime)
     }
 
 
@@ -58,10 +63,10 @@ const Activities = () => {
                 <div className='break-section'>
                     <h2>Add A Break</h2>
                     <div className='break-time'>
-                        <span>10m</span>
-                        <span>20m</span>
-                        <span>30m</span>
-                        <span>40m</span>
+                        <span onClick={() => handleAddToBreak(10)}>10m</span>
+                        <span onClick={() => handleAddToBreak(20)}>20m</span>
+                        <span onClick={() => handleAddToBreak(30)}>30m</span>
+                        <span onClick={() => handleAddToBreak(40)}>40m</span>
                     </div>
                 </div>
                 <div className='activities-details'>
@@ -72,7 +77,7 @@ const Activities = () => {
                     </div>
                     <div className='Break-time'>
                         <span>Break time</span>
-                        <span>0m</span>
+                        <span>{time}m</span>
                     </div>
                 </div>
                 <button className='cart-btn'><p>Activity Completed</p></button>
