@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 
 
 
+
 const Activities = () => {
 
     const [activities, setActivities] = useState([])
@@ -23,7 +24,7 @@ const Activities = () => {
 
     const handleAddToList = (activite) => {
         const newCart = [...cart, activite]
-        setcart(newCart)
+        setcart(newCart);
     }
     let total = 0;
     for (const activite of cart) {
