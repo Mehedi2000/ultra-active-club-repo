@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import Activite from '../Activite/Activite';
 
 
+
 const Activities = () => {
 
     const [activities, setActivities] = useState([])
@@ -44,7 +45,25 @@ const Activities = () => {
                 </div>
                 <div className='break-section'>
                     <h2>Add A Break</h2>
+                    <div className='break-time'>
+                        <span>10m</span>
+                        <span>20m</span>
+                        <span>30m</span>
+                        <span>40m</span>
+                    </div>
                 </div>
+                <div className='activities-details'>
+                    <h2>Activities Details</h2>
+                    <div className='activities-time'>
+                        <span>Activities time</span>
+                        <span>0m</span>
+                    </div>
+                    <div className='Break-time'>
+                        <span>Break time</span>
+                        <span>0m</span>
+                    </div>
+                </div>
+                <button className='cart-btn'><p>Activity Completed</p></button>
             </div>
         </div>
     );

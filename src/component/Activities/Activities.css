@@ -42,3 +42,60 @@
 .about-me {
     text-align: center;
 }
+
+.break-section {
+    margin: 40px 10px 0 10px;
+}
+
+.break-time {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    background: rgb(226, 226, 245);
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.break-time span {
+    background: white;
+    border-radius: 50%;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.activities-details {
+    margin: 40px 10px 0 10px;
+}
+
+.activities-time {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(226, 226, 245);
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Break-time {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(226, 226, 245);
+    padding: 20px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart-btn {
+    margin-top: 40px;
+    width: 100%;
+    border: none;
+    background: rgb(171, 165, 165);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
